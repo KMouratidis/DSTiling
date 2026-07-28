@@ -1,0 +1,8 @@
+# Build artifacts
+schemas/gschemas.compiled
+*.zip
+venv
+
+# Editor
+*.swp
+*~

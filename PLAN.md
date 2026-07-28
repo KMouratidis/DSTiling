@@ -331,11 +331,11 @@ Items verified on GNOME 50.3 are marked `[x]`.
 - [x] Multi-monitor: left/right half traversal matches the worked example.
 - [x] ➕ Thirds: `Super+Alt+Right` walks col1 → col2 → col3 → col1-of-right-monitor; `Super+Alt+Left` walks back and crosses the other way.
 - [x] ➕ `Super+Left`/`Super+Right` **from a maximized window** snaps to that half (was a no-op before the guard fix).
-- [ ] Drag a half/third-tiled window = restores to original size at drop position.
-- [ ] Toggle a dock/panel on → snapped halves & thirds re-fit to the new work area.
-- [ ] ➕ `Super+Down` from an **externally-maximized** window = visibly smaller (validated target), never the full-screen size.
-- [ ] Disable extension → native `Super+Left/Right/Up/Down`, `Super+Alt+Left/Right` (workspace), and `edge-tiling` fully restored.
-- [ ] Simulate crash (kill shell while enabled) → on reload, native shortcuts restored from the `native-backup` key.
+- [x] Drag a half/third-tiled window = restores to original size at drop position.
+- [x] Toggle a dock/panel on → snapped halves & thirds re-fit to the new work area.
+- [x] ➕ `Super+Down` from an **externally-maximized** window = visibly smaller (validated target), never the full-screen size.
+- [x] Disable extension → native `Super+Left/Right/Up/Down`, `Super+Alt+Left/Right` (workspace), and `edge-tiling` fully restored.
+- [x] Simulate crash (kill shell while enabled) → on reload, native shortcuts restored from the `native-backup` key.
 
 Reloading after a `snap.js` change requires a **log out / log in** on Wayland (the module
 is cached; a disable/enable cycle is not reliable). Watch logs:

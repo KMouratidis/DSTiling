@@ -3,6 +3,6 @@
     "name": "Dead Simple Tiling",
     "description": "Minimal Windows-like window tiling for GNOME: snap halves with Super+Arrows, maximize/restore/minimize with Super+Up/Down. No animations, no options, just opinionated behavior.",
     "shell-version": ["45", "46", "47", "48", "49", "50"],
-    "url": "https://kmouratidis.com",
+    "url": "https://github.com/KMouratidis/DSTiling",
     "settings-schema": "org.gnome.shell.extensions.dstiling"
 }
