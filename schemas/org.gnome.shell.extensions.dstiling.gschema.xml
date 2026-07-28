@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <!--
+    Dead Simple Tiling
+    The keybinding keys below exist ONLY because Main.wm.addKeybinding() requires
+    a GSettings key. The shortcuts are intentionally NOT user-configurable.
+  -->
+    <schema id="org.gnome.shell.extensions.dstiling"
+        path="/org/gnome/shell/extensions/dstiling/">
+
+        <!-- Snap window to left half (and traverse monitors at the edge) -->
+        <key type="as" name="snap-left">
+            <default><![CDATA[['<Super>Left']]]></default>
+        </key>
+
+        <!-- Snap window to right half (and traverse monitors at the edge) -->
+        <key type="as" name="snap-right">
+            <default><![CDATA[['<Super>Right']]]></default>
+        </key>
+
+        <!-- Maximize (no-op if already maximized) -->
+        <key type="as" name="toggle-maximize">
+            <default><![CDATA[['<Super>Up']]]></default>
+        </key>
+
+        <!-- Restore (un-snap / un-maximize) or, if already free, minimize -->
+        <key type="as" name="restore-minimize">
+            <default><![CDATA[['<Super>Down']]]></default>
+        </key>
+
+        <!-- Thirds: walk one third-column left (crosses monitors at the edge) -->
+        <key type="as" name="snap-third-left">
+            <default><![CDATA[['<Super><Alt>Left']]]></default>
+        </key>
+
+        <!-- Thirds: walk one third-column right (crosses monitors at the edge) -->
+        <key type="as" name="snap-third-right">
+            <default><![CDATA[['<Super><Alt>Right']]]></default>
+        </key>
+
+        <!--
+          Crash-safe backup of the native GNOME keybindings we override, stored as
+      JSON: { "schema_id": { "key": "<GVariant string>" } }.
+      On enable, any pre-existing backup is restored first (so we never
+      double-stomp), then the new overrides are taken and re-persisted here.
+    -->
+        <key type="s" name="native-backup">
+            <default>''</default>
+        </key>
+
+    </schema>
+</schemalist>
